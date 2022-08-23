@@ -33,7 +33,7 @@ document.getElementById('manager-btn-field').addEventListener('click', function 
     const newCoachAmount = parseInt(newCoachAmountString);
 
     const FinalAmoutTotalElement = document.getElementById('manager-coach-amount');
-    const currentAmountTotal = newManagerAmount + newCoachAmount + playerTotal;
+    const currentAmountTotal = newManagerAmount + newCoachAmount;
     FinalAmoutTotalElement.innerText = currentAmountTotal;
     /* managerAmountField.value = ''; */
 })
@@ -87,10 +87,10 @@ function addToSelectedFive(element) {
 
 
 }
-/* function disablE() {
+function disablE() {
     document.getElementById('btn-disable').disabled = true;
 
-} */
+}
 
 
 
