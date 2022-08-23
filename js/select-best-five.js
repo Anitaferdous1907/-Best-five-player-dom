@@ -54,14 +54,13 @@ function addToSelectedFive(element) {
     /*  console.log(element.parentNode.parentNode.children) */
     /* console.log(element.parentNode.parentNode.children[1].innerText) */
     const playerName = element.parentNode.parentNode.children[1].innerText;
-    console.log(playerName)
     const playerobj = {
         playerName: playerName
 
     }
     playerList.push(playerobj);
-    /*  console.log(playerList)
-     console.log(playerList.length) */
+
+
     document.getElementById('selected-player').innerText = playerList.length;
     display(playerList);
     disablE();
